@@ -159,7 +159,7 @@ function Hero() {
     const arrow = root.querySelector(".scroll-arrow");
     if (reduced) {
       anime.set([eyebrow, letters, tagline, buttons], { opacity: 1, translateY: 0 });
-      if (typeRef.current) typeRef.current.textContent = roles[0];
+      if (typeRef.current) typeRef.current.textContent = "Web Designer";
       return;
     }
     anime.timeline().add({ targets: eyebrow, opacity: [0, 1], translateY: [20, 0], duration: 600, easing: EASE.quick })
